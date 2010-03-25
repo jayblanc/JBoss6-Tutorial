@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import fr.loria.score.ejb.HelloWorldService;
 
+/**
+ * @author Jerome Blanchard (jayblanc@gmail.com)
+ * @date 24 March 2010
+ */
 public class FragmentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

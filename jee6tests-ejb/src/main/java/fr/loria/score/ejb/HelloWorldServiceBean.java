@@ -6,6 +6,10 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+/**
+ * @author Jerome Blanchard (jayblanc@gmail.com)
+ * @date 24 March 2010
+ */
 @Stateless
 public class HelloWorldServiceBean implements HelloWorldService {
 

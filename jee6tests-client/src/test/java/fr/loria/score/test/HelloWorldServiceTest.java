@@ -13,6 +13,10 @@ import org.junit.Test;
 
 import fr.loria.score.ejb.HelloWorldService;
 
+/**
+ * @author Jerome Blanchard (jayblanc@gmail.com)
+ * @date 24 March 2010
+ */
 public class HelloWorldServiceTest {
 	
 	public static junit.framework.Test suite() { 

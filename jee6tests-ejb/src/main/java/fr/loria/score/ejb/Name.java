@@ -14,6 +14,10 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
+/**
+ * @author Jerome Blanchard (jayblanc@gmail.com)
+ * @date 24 March 2010
+ */
 @Entity
 @NamedQueries( value={
 		@NamedQuery(name="findAllNames", query="SELECT n FROM Name n"),

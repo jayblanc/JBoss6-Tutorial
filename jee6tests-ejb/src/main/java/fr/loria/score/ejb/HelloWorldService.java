@@ -2,6 +2,10 @@ package fr.loria.score.ejb;
 
 import javax.ejb.Remote;
 
+/**
+ * @author Jerome Blanchard (jayblanc@gmail.com)
+ * @date 24 March 2010
+ */
 @Remote
 public interface HelloWorldService {
 	

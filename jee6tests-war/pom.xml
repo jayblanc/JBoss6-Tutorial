@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <parent>
+    <artifactId>jee6tests</artifactId>
+    <groupId>fr.loria.score</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.loria.score</groupId>
+  <artifactId>jee6tests-war</artifactId>
+  <packaging>war</packaging>
+  <name>jee6tests-war Maven Webapp</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
+  <build>
+    <finalName>jee6tests-war</finalName>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>fr.loria.score</groupId>
+    	<artifactId>jee6tests-ejb</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>ejb</type>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>fr.loria.score</groupId>
+    	<artifactId>jee6tests-war-fragment</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

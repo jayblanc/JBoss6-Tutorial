@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>jee6tests</artifactId>
+		<groupId>fr.loria.score</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>fr.loria.score</groupId>
+	<artifactId>jee6tests-ear</artifactId>
+	<packaging>ear</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>jee6tests-ear JavaEE6 Assembly</name>
+	<url>http://maven.apache.org</url>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>
+					<displayName>JBoss JEE6 Test</displayName>
+					<generateApplicationXml>true</generateApplicationXml>
+					<modules>
+						<ejbModule>
+							<groupId>fr.loria.score</groupId>
+							<artifactId>jee6tests-ejb</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>fr.loria.score</groupId>
+							<artifactId>jee6tests-war</artifactId>
+						</webModule>
+					</modules>
+					<jboss>
+						<version>5</version>
+						<unauthenticated-principal>guest</unauthenticated-principal>
+					</jboss>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>jee6tests</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>fr.loria.score</groupId>
+			<artifactId>jee6tests-ejb</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>fr.loria.score</groupId>
+			<artifactId>jee6tests-war</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>
